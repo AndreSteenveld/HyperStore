@@ -32,11 +32,7 @@ define( [ "dojo/_base/declare", "dojo/_base/Deferred", "./HyperObject", "./Hyper
 			
 		}
 		
-		get: function( identifier ){ 
-			
-				
-			
-		},
+		get: function( identifier ){ },
 		
 		put: function( object, directives ){ },
 		

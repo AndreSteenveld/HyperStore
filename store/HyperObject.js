@@ -70,12 +70,22 @@ define( [ "dojo/_base/decalre", "dojo/_base/lang", "dojo/Stateful", "dojo/_base/
 				
 				this[ key ] = value;
 				
-			} else if( typeof value.isInstanceOf === "function" && value.isInstanceOf( HyperResultSet ) ){
+			} else if( 
+				   value !== null 
+				&& typeof value !== "undefined" 
+				&& typeof value.isInstanceOf === "function" 
+				&& value.isInstanceOf( HyperResultSet ) 
+			){
 				
 				// We just changed a whole lot of object what are we going to here?
 				
 				
-			} else if( typeof value.isInstanceOf === "function" && value.isInstanceOf( HyperObject ) ){
+			} else if( 
+				   value !== null 
+				&& typeof value !== "undefined" 
+				&& typeof value.isInstanceOf === "function" 
+				&& value.isInstanceOf( HyperObject ) 
+			){
 				
 				// Although we changed just one object we will have to communicate this to the server?
 				
